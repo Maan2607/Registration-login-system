@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body style="background:rgb(158, 138, 124)">
+    <div style="height:25vh; background:rgb(185, 169, 94);  display: flex;
+  justify-content: center;
+ "> <h1 style="font-size: 10vh;">Registration Page</h1></div>
+ <div style="height: 71vh; background:rgb(139, 139, 235); display: flex;
+  justify-content: center; align-items:center" ><div style="height:fit-content ; background:rgb(158, 158, 202) ;padding: 3%"><div class="card">
+  <form action="/auth/register" method="POST">
+    <div class="mb-3" style="padding:4%">
+    <label>Name</label>
+    <input type="text" name="nam">
+  </div>
+
+  <div class="mb-3" style="padding:4%">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="emai">
+  </div>
+  <div class="mb-3"style="padding:4%">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="passwor">
+  </div>
+    <div class="mb-3"style="padding:4%">
+    <label> Confirm Password</label>
+    <input type="password" name="conpasswor">
+  </div>
+  <div class="mb-3 form-check" style="padding:4%">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1" name="chec">I am not a robot</label>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+  </div>
+  {{#if message}}
+  <div class="card">
+  <div class="card-body">
+    {{message}}
+  </div>
+</div>
+
+  {{/if}}
+</div>
+</body>
+</html>
