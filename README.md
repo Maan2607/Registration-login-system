@@ -1,4 +1,10 @@
 # Registration-login-system
+This project includes Home, Login and Register Page, which uses tool like HTML, CSS, Javascript, Express, Nodejs and Mysql.
+For styling CSS framwork 'bootstrap' is also used.
+All the data entered by the user during registation will be stored in Mysql database. 
+Dotenv file is also used to secure Mysql credentials.
+It confirms the password while registration, the password stored in Mysql database in encrypted. It also avoids the Registration of duplicate users.  
+As the user tries to Login, the code will check in Mysql database if the entered credentials are correct or not. If it is incorrect, the code will straight away print 'Authentication failed'   and if they were correct then it will go to next page stating 'Login successful'.
 
 
 ![Screenshot (17)](https://github.com/Maan2607/Registration-login-system/assets/101566688/1a102f45-9077-4b1c-9710-89fdebe6b79c)
